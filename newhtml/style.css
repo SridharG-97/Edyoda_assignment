@@ -1,0 +1,105 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+html {
+  scroll-behavior: smooth;
+}
+.Navbar {
+  display: flex;
+  background-color: gray;
+  
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.NavLeft {
+  display: flex;
+  padding:10px;
+  flex: 0.1;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+}
+.NavLeft > h4 {
+  color: #000;
+  cursor: pointer;
+}
+.NavRight {
+    padding:10px;
+  display: flex;
+  flex: 0.9;
+  /* background: #000; */
+  justify-content: end;
+}
+.nav-link {
+  padding: 15px;
+  cursor: pointer;
+  color: #ffff;
+  
+}
+.nav-link > a {
+    
+  text-decoration: none;
+  color: #ffff;
+}
+
+.nav-link:hover {
+  background-color: #000;
+  color: #ffff;
+}
+.container {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.list {
+  width: 20%;
+  margin: 10px 20px;
+  
+  z-index: 1;
+  position: fixed;
+  
+  
+}
+.list > ul {
+  margin: 20px;
+  flex: 0.15;
+}
+.list > ul > li{
+    
+    padding:10px
+}
+.list > ul > li > a {
+    padding:10px;
+    display: flex;
+    flex:1;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(207, 35, 35);
+  border-radius:10px     
+}
+.list>ul>li>a .active {
+    background-color:#123C69;
+}
+
+.list>ul>li>a:hover{
+    padding:10px;
+    display: flex;
+    flex:1;
+    background-color:#123C69;
+    
+}
+.images {
+    z-index: -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 200px;
+  margin-bottom: 15px;
+}
+.images > img {
+  padding: 25px;
+}
